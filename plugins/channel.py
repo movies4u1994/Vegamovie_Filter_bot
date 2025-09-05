@@ -335,7 +335,12 @@ def format_file_size(size_bytes):
         if size_bytes < 1024:
             return f"{size_bytes:.2f} {unit}"
         size_bytes /= 1024
-    return f"{size_bytes:.2f} PB"                "file_size": https://github.com/movies4u1994/Vegamovie_Filter_bot/blob/4249c2eee14152d86c5285cb73562466fbdc2f7c/plugins/channel.py#L338,
+return (f"{size_bytes:.2f} PB",
+    "file_size": file_size_str,
+    "caption": caption,
+    "language": language,
+    "year": year
+)
                 "caption": caption,
                 "language": language,
                 "year": year,
@@ -541,6 +546,7 @@ def format_file_size(size_bytes):
             return f"{size_bytes:.2f} {unit}"
         size_bytes /= 1024
     return f"{size_bytes:.2f} PB"
+
 
 
 
